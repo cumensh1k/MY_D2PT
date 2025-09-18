@@ -1,6 +1,9 @@
 import pytest
 import json
+import sys
+import os
 from unittest.mock import patch
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
 from app import app, db, Hero, HeroCounter, HeroSynergy, HeroBuild, BuildComment, MatchAnalysis
 
 
